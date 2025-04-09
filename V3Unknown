@@ -1,5 +1,6 @@
 -- Load External Scripts
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))()
+task.wait(1)
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
 
 -- Create Main UI Window
@@ -56,7 +57,7 @@ local function equipBlankCardAndFireEvent()
             ReplicatedStorage:WaitForChild("UI"):WaitForChild("ATM"):FireServer(unpack(args))
             
             -- Wait a bit before looping
-            wait(1)
+            wait(3)
             break
         end
     end
@@ -64,7 +65,7 @@ end
 
 while true do
     equipBlankCardAndFireEvent()
-    wait(1) -- Adjust the wait time as needed
+    wait(3) -- Adjust the wait time as needed
 end
 
 end)
@@ -275,7 +276,6 @@ local function toggleAnimation(state, animationName)
     end
 end
 
-Animations:addToggle("🐍 Snake Crawl", function(state) toggleAnimation(state, "snake crawl") end)
 Animations:addToggle("🔒 Handcuff Animation", function(state) toggleAnimation(state, "cuffed") end)
 Animations:addToggle("🛑 Crouch Animation", function(state) toggleAnimation(state, "crouch") end)
 
@@ -307,20 +307,6 @@ end)
 
 Character:addButton("💎 HunnidChain", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/PQCY6Wd1"))()
-end)
-
-Character:addLabel("👟 Shoes & Add-ons", "Buy Available Shoes")
-
-Character:addButton("🎄 Xmas Shoes [$200]", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/nZip8SyM"))()
-end)
-
-Character:addButton("🥇 Gold Xmas Shoes [$200]", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Hu4e1mkB"))()
-end)
-
-Character:addButton("🔴 Redmas Shoes [$200]", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/AaaQCUij"))()
 end)
 
 -- **Cars Page (Coming Soon)**
@@ -504,8 +490,6 @@ Cars:addTextBox("Adjust Turbo Boost", "Number here", function(value)
     local carname = plr.Name .. "'s Car"
     local g = game.Workspace:GetChildren()
 
-    print("💎made by cor_s |discord user|💎")
-
     local carFound = false
 
     for _, car in ipairs(g) do
@@ -531,3 +515,4 @@ Cars:addTextBox("Adjust Turbo Boost", "Number here", function(value)
     end
 end)
 
+print("Using UnknownHub V3")
