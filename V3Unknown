@@ -315,7 +315,6 @@ Cars:addLabel("🚗 Cars Features", "❗️CAR MUST BE SPAWNED❗️")
 
 Cars:addButton("🏎️ Turbo Activator", function()
 
-print("💎made by cor_s |discord user|💎")
 
 local plr = game.Players.LocalPlayer.Name
 local carname = (plr .. "'s Car") 
@@ -350,8 +349,6 @@ Cars:addTextBox("Enter Horsepower (default is 200)", "Number here", function(val
         local plr = game.Players.LocalPlayer
         local carname = plr.Name .. "'s Car"
         local g = game.Workspace:GetChildren()
-
-        print("💎made by cor_s |discord user|💎")
 
         local carFound = false  -- Flag to track if the car was found
 
@@ -391,8 +388,6 @@ Cars:addTextBox("Adjust Camber (Front & Rear)", "Number here", function(value)
     local carname = plr.Name .. "'s Car"
     local g = game.Workspace:GetChildren()
 
-    print("💎made by cor_s |discord user|💎")
-
     local carFound = false
 
     for _, car in ipairs(g) do
@@ -424,7 +419,6 @@ Cars:addTextBox("Adjust Weight (All Values)", "Number here", function(value)
     local carname = plr.Name .. "'s Car"
     local g = game.Workspace:GetChildren()
 
-    print("💎made by cor_s |discord user|💎")
 
     local carFound = false
 
@@ -456,8 +450,6 @@ Cars:addTextBox("Adjust Brakes (Front & Rear)", "Number here", function(value)
     local plr = game.Players.LocalPlayer
     local carname = plr.Name .. "'s Car"
     local g = game.Workspace:GetChildren()
-
-    print("💎made by cor_s |discord user|💎")
 
     local carFound = false
 
